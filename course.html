@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padhaku Pro - Learn In-Demand Skills</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        
+ <div class="logo">PadhakuPro</div>
+ <div class="search-bar">
+    <input type="text" id="search-input" placeholder="What do you want to learn today?" oninput="showSuggestions()">
+    <div id="suggestions"></div>
+</div>
+        <div class="nav-buttons">
+            <button class="btn" onclick="window.location.href='signup.html'">Sign up</button>
+            <button class="btn-outline" onclick="window.location.href='login.html'">Log in</button>
+        </div>
+        
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Learn today’s most in-demand skills with our free online courses</h1>
+            <p>Not sure where to get started?</p>
+            <div class="hero-buttons">
+                <a href="#courses-section" class="btn">Explore Free Courses</a>
+                <button class="btn-outline">Get Recommendation</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img id="hero-img" src="Online-learning-activities.jpg" alt="Student learning online">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature">
+             <svg width="30" height="30" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 18V6C3 4.9 3.9 4 5 4H15C16.1 4 17 4.9 17 6V18M3 18C3 19.1 3.9 20 5 20H15C16.1 20 17 19.1 17 18M3 18H17M12 10H7M12 14H7M20 6L22 7.5L20 9L18 7.5L20 6ZM20 9V14" stroke="#007BFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              
+              <h3> Learn from Industry Experts</h3>
+            
+            <p>Comprehensive self-paced courses created with top practitioners.</p>
+        </div>
+        <div class="feature">
+            <svg width="30" height="30" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 6C3 5 4 4 5 4H11V20H5C4 20 3 19 3 18V6Z" fill="#B2EBF2" stroke="#00BCD4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M21 6C21 5 20 4 19 4H13V20H19C20 20 21 19 21 18V6Z" fill="#81C784" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <h3> Free Resources</h3>
+            <p>Free guides on career paths, salaries, interview tips, and more.</p>
+        </div>
+        <div class="feature">
+            <svg width="30" height="30" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="10" r="5" fill="#FFF176" stroke="#FBC02D" stroke-width="2"/>
+                <path d="M10 17H14V20H10V17Z" fill="#FFD54F" stroke="#FFB300" stroke-width="2"/>
+                <path d="M7 22H17M10 17H14" stroke="#FFA000" stroke-width="2" stroke-linecap="round"/>
+                <path d="M16.24 3.76L17.66 2.34M7.76 3.76L6.34 2.34M2 12H4M20 12H22" stroke="#FF9800" stroke-width="2"/>
+              </svg>
+              <h3>  Skill-based Learning</h3>
+            <p>600+ job-ready skills on offer in today’s most in-demand domains.</p>
+        </div>
+        <div class="feature">
+            <svg width="30" height="30" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="6" y="4" width="12" height="16" rx="2" fill="#E1BEE7" stroke="#AB47BC" stroke-width="2"/>
+                <circle cx="12" cy="12" r="5" fill="#B39DDB" stroke="#673AB7" stroke-width="2"/>
+                <path d="M12 10V12L14 13.5" stroke="#FF5722" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+               <h3>Learn Anytime, Anywhere</h3>
+            <p>Learn while working or studying from any place, across any device.</p>
+        </div>
+    </section>
+    <!-- Features Section End -->
+   <!-- Courses Section -->
+   <section id="courses-section">
+    <div class="courses-heading">Explore Our Free & Premium Courses</div>
+    <div class="courses-subheading">Master programming, AI, web development, and more!</div>
+
+    <!-- Scrollable Course Container with Navigation -->
+    <div class="courses-scroll-container">
+        <!-- Left Scroll Button -->
+        <button class="scroll-btn scroll-left">&#10094;</button>
+
+        <div class="courses-container">
+            <!-- Existing Courses -->
+            <div class="course-card" id="course-python">
+                <img src="python.webp" alt="Python Course">
+                <h3>Python for Beginners</h3>
+                <p>Learn Python from scratch and build real-world applications.</p>
+                <span class="price free">Free</span>
+                <br>
+                <a href="py-course-details.html" class="btn enroll-btn">Enroll Now</a>
+            </div>
+            <div class="course-card" id="course-javascript" >
+                <img src="javascript-js-training-course-with-internship.svg" alt="JavaScript Course">
+                <h3>JavaScript Essentials</h3>
+                <p>Master JavaScript and create dynamic web applications.</p>
+                <span class="price free">Free</span>
+                <br>
+                <a href="js-course-details.html" class="btn enroll-btn">Enroll Now</a>       
+                 </div>
+
+            <div class="course-card" id="course-java">
+                <img src="Artboard-1-copy.jpg" height="325" alt="Java Course">
+                <h3>Complete Java Development</h3>
+                <p>Learn Java for web, mobile, and enterprise applications.</p>
+                <span class="price free">Free</span>
+ <a href="java-course-details.html" class="btn enroll-btn">Enroll Now</a>  
+            </div>
+
+            <div class="course-card" id="course-cpp">
+                <img src="c++-programming-classes-online-training-course.webp" height="325" alt="C++ Course">
+                <h3>C++ Programming Masterclass</h3>
+                <p>Deep dive into C++ and develop high-performance applications.</p>
+                <span class="price free">Free</span>
+ <a href="cpp-course-details.html" class="btn enroll-btn">Enroll Now</a>  
+            </div>
+            <div class="course-card" id="course-html-css">
+                <img src="html&css.jpeg" height="325" alt="HTML & CSS">
+                <h3>HTML & CSS Mastery</h3>
+                <p>Learn modern HTML and CSS techniques for web design.</p>
+                <span class="price free">Free</span>
+                <a href="html&css-course-details.html" class="btn enroll-btn">Enroll Now</a>  
+            </div>
+            <div class="course-card" id="course-react">
+                <img src="react.jpeg" height="325" width="600px" alt="React Course">
+                <h3>React.js for Web Development</h3>
+                <p>Build powerful front-end applications using React.</p>
+                <span class="price free">Free</span>
+                <a href="react.js-course-details.html" class="btn enroll-btn">Enroll Now</a>  
+            </div>
+            <div class="course-card" id="course-ml">
+                <img src="ml.png" height="325" width="500px" alt="Machine Learning">
+                <h3>Machine Learning Basics</h3>
+                <p>Learn ML algorithms and build intelligent models.</p>
+                <span class="price free">Free</span>
+                <a href="ml-course-details.html" class="btn enroll-btn">Enroll Now</a>  
+
+            </div>
+            <div class="course-card" id="course-ai">
+                <img src="AIWEB.jpg" height="325" alt="AI Course">
+                <h3>Artificial Intelligence</h3>
+                <p>Understand AI concepts and develop AI-driven applications.</p>
+                <span class="price free">Free</span>
+                <a href="ai-course-details.html" class="btn enroll-btn">Enroll Now</a>  
+            </div>
+            <div class="course-card" id="course-deep-learning">
+                <img src="deep-learning.jpg" height="325" alt="Deep Learning">
+                <h3>Deep Learning</h3>
+                <p>Master neural networks and deep learning techniques.</p>
+                <span class="price free">Free</span>
+                <a href="dl-course-details.html" class="btn enroll-btn">Enroll Now</a>  
+            </div>
+            <div class="course-card" id="course-uiux">
+                <img src="ui.png" height="325" alt="UI/UX Design">
+                <h3>UI/UX Design Mastery</h3>
+                <p>Design stunning user interfaces and experiences.</p>
+                <span class="price free">Free</span>
+                <a href="ui-course-details.html" class="btn enroll-btn">Enroll Now</a>  
+            </div>
+            <div class="course-card" id="course-ds">
+                <img src="ds.avif" height="325" width="500" alt="Data Science">
+                <h3>Data Science Essentials</h3>
+                <p>Analyze data and build data-driven applications.</p>
+                <span class="price free">Free</span>
+                <a href="datascience-course-details.html" class="btn enroll-btn">Enroll Now</a>  
+            </div>
+            <div class="course-card" id="course-cloud">
+                <img src="cloud_computing.webp" height="325" width="500px" alt="Cloud Computing">
+                <h3>Cloud Computing</h3>
+                <p>Master AWS, Azure, and cloud architecture.</p>
+                <span class="price free">Free</span>
+                <a href="cloudcomputing-course-details.html" class="btn enroll-btn">Enroll Now</a>
+
+            </div>
+        </div>
+        <!-- Right Scroll Button -->
+        <button class="scroll-btn scroll-right">&#10095;</button>
+    </div>
+       
+    </div>
+    
+</section>
+<!-- footer section -->
+<!-- footer section -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-top">
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook">
+                    
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 12.06C22 6.503 17.523 2 12 2S2 6.503 2 12.06c0 4.989 3.657 9.129 8.437 9.88v-6.987h-2.54V12.06h2.54V9.797c0-2.514 1.493-3.897 3.777-3.897 1.096 0 2.238.196 2.238.196v2.46h-1.26c-1.24 0-1.627.77-1.627 1.562v1.941h2.773l-.443 2.893h-2.33v6.987C18.343 21.19 22 17.05 22 12.06z"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.643 4.937c-.835.37-1.73.62-2.675.733a4.67 4.67 0 002.049-2.572 9.288 9.288 0 01-2.956 1.13 4.655 4.655 0 00-7.92 4.243 13.199 13.199 0 01-9.574-4.854 4.654 4.654 0 001.443 6.211 4.64 4.64 0 01-2.107-.582v.058a4.655 4.655 0 003.732 4.565 4.665 4.665 0 01-2.1.08 4.656 4.656 0 004.346 3.23 9.335 9.335 0 01-6.888 1.93A13.18 13.18 0 007.548 21c8.6 0 13.314-7.137 13.314-13.314 0-.202 0-.403-.014-.603a9.502 9.502 0 002.335-2.446z"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.33 3.608 1.305.975.976 1.244 2.242 1.306 3.608.058 1.265.069 1.645.069 4.849s-.012 3.584-.07 4.849c-.062 1.366-.33 2.633-1.305 3.608-.976.975-2.242 1.244-3.608 1.306-1.265.058-1.645.069-4.849.069s-3.584-.012-4.849-.07c-1.366-.062-2.633-.33-3.608-1.305-.975-.976-1.244-2.242-1.306-3.608-.058-1.265-.069-1.645-.069-4.849s.012-3.584.07-4.849c.062-1.366.33-2.633 1.305-3.608C5.935 2.493 7.202 2.225 8.568 2.163 9.833 2.104 10.213 2.092 12 2.092m0-2.163C10.161 0 9.738.014 8.463.072 7.185.132 5.96.412 4.943 1.305c-1.017.892-1.297 2.117-1.366 3.395-.058 1.265-.07 1.687-.07 4.849s.012 3.584.07 4.849c.07 1.278.35 2.503 1.366 3.395 1.017.892 2.242 1.173 3.52 1.232 1.265.058 1.687.07 4.849.07s3.584-.012 4.849-.07c1.278-.07 2.503-.35 3.395-1.366.892-1.017 1.173-2.242 1.232-3.52.058-1.265.07-1.687.07-4.849s-.012-3.584-.07-4.849c-.07-1.278-.35-2.503-1.366-3.395-.892-1.017-2.117-1.297-3.395-1.366C15.584.014 15.161 0 12 0zM12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.999 3.999 0 110-7.998 3.999 3.999 0 010 7.998zm6.406-10.845a1.44 1.44 0 100-2.88 1.44 1.44 0 000 2.88z"/>
+                    </svg>
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.23 0H1.77C.792 0 0 .775 0 1.731V22.27C0 23.225.792 24 1.77 24h20.46C23.208 24 24 23.225 24 22.269V1.731C24 .775 23.208 0 22.23 0zM7.116 20.452H3.557V9h3.559v11.452zM5.337 7.506a2.059 2.059 0 11.001-4.118 2.059 2.059 0 01-.001 4.118zM20.451 20.452h-3.556v-5.567c0-1.328-.026-3.036-1.847-3.036-1.848 0-2.13 1.443-2.13 2.938v5.665H9.363V9h3.412v1.562h.047c.476-.9 1.635-1.847 3.364-1.847 3.594 0 4.265 2.363 4.265 5.438v6.299z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <p>© 2025 PadhakuPro. All rights reserved.</p>
+    </div>
+</footer>
+
+
+</body>
+</html>

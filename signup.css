@@ -1,0 +1,63 @@
+/* Reset default styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #aed8e4, rgb(78, 78, 122));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Auth container */
+.auth-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;  /* Slightly reduced border-radius for better shape */
+    box-shadow: 0px 16px 20px rgba(0, 0, 0, 0.1);
+    width: 380px;  /* Adjusted for a more balanced look */
+    text-align: center;
+}
+
+/* Form input fields */
+.auth-container input {
+    width: calc(100% - 35px);  /* Ensures equal margin from left and right */
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;  /* More rounded corners for a modern look */
+    height: 20px;
+  
+}
+
+/* Button styles */
+.btn {
+    background-color: rgb(78, 78, 122);
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: rgb(78, 78, 122);
+}
+
+/* Login link */
+.auth-container p {
+    margin-top: 15px;
+}
+
+.auth-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.auth-container a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background: #f8f9fa;
+    color: #333;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: rgb(78, 78, 122);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.navbar a{
+    color: #aed8e4;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #aed8e4;
+}
+.course-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgb(198, 34, 34);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Left section (Title + What You'll Learn) */
+.course-details {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.course-title {
+    margin-left:15px ;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.course-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #504478;
+    margin-left: 15px;
+}
+
+ h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.learn-list {
+    list-style: none;
+    padding: 0;
+}
+
+.learn-list li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    color: #333;
+    margin-left: 15px;
+}
+
+.learn-list li::before {
+    content: "✔";
+    color: #4CAF50;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Right section (Video Preview) */
+.course-preview {
+    width: 40%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.video-container {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 1000;
+    margin-left: 505px;
+}
+
+.video-container img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    margin-left: 100px;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-button i {
+    color: white;
+    font-size: 20px;
+}
+
+.preview-text {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .course-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-details {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .course-preview {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+.course-header{
+    display:block;
+    background-color: #aed8e4;
+
+}
+/* Right Section (Video + Enroll Button) */
+.course-preview {
+    width: 40%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.video-container {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+
+}
+
+.video-container img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+}
+
+.enroll-button {
+    width: 100%;
+    background: #007bff;
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.enroll-button:hover {
+    background: #0056b3;
+}
+
+.syllabus-holder{
+    padding: 15px;
+    background-color: #aed8e4;
+}
+
+/* Syllabus Section Styling */
+.syllabus-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: rgb(78, 78, 122);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    font-family: "Arial", sans-serif;
+   
+}
+
+.syllabus-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #e9edf1;
+    background-color: rgb(78, 78, 122);
+}
+
+/* Syllabus List */
+.syllabus-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Each Module */
+.syllabus-item {
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Module Button */
+.syllabus-toggle {
+    width: 100%;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    background: #6c7b8a;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.syllabus-toggle:hover {
+    background: #58626c;
+}
+
+/* Dropdown Icon */
+.syllabus-toggle::after {
+    content: "\25BC"; /* Downward arrow */
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate icon when active */
+.syllabus-item.active .syllabus-toggle::after {
+    transform: rotate(180deg);
+}
+
+/* Hidden Content */
+.syllabus-content {
+    display: none;
+    background: #aed8e4;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    transition: all 0.3s ease-in-out;
+}
+
+.syllabus-content p {
+    margin: 8px 0;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Active Module */
+.syllabus-item.active {
+    background: #e9f5ff;
+    border-left: 5px solid #69737e;
+}
+/* Responsive */
+@media (max-width: 900px) {
+    .course-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-details {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .course-preview {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .syllabus-section {
+        text-align: center;
+    }
+}
+.video-wrapper{
+    background-color: #aed8e4;
+}
+
+.video-wrapper h3{
+    margin-left: 15px;
+    font-size: 1.5rem;
+}
+
+.video-wrapper iframe{
+    margin-left: 405px;
+    align-items: center;
+}
+
+.video-wrapper span{
+    margin-left: 15PX;
+}
+
+.video-wrapper img{
+    margin-left: 25px;
+}
+/* Footer Styling */
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+}
+
+/* Footer Container */
+.footer-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #34495e;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: #007bff;
+}
+
+/* SVG Icons */
+.social-icons svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Footer Navigation */
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 15px;
+}
+
+.footer-nav ul li {
+    display: inline;
+}
+
+.footer-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-nav ul li a:hover {
+    color: #007bff;
+}
+
+/* Copyright Text */
+.footer-container p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-icons {
+        gap: 15px;
+    }
+}
