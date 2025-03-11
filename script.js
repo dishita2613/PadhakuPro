@@ -189,7 +189,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Redirect to homepage after 2 seconds
             setTimeout(() => {
-                window.location.href = "index.html"; // Redirect to homepage
+                window.location.href = "course.html"; // Redirect to homepage
             }, 2000);
         });
     }
